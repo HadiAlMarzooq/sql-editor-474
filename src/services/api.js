@@ -1,5 +1,5 @@
 const executeSQL = async (sql) => {
-    const response = await fetch('https://sql-editor-api.vercel.app/execute-sql', {
+    const response = await fetch('https://sql-editor-api.vercel.app/api/execute-sql', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ sql }),
